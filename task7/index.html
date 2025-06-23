@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 7 - Animated Portfolio Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fce4ec, #e1bee7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      animation: popUp 1.5s ease-in-out;
+    }
+    h1 {
+      font-size: 32px;
+      color: #7b1fa2;
+      margin-bottom: 15px;
+      animation: glowText 2s infinite;
+    }
+    p {
+      font-size: 18px;
+      color: #555;
+      margin: 10px 0 20px;
+    }
+    .emoji {
+      font-size: 28px;
+      animation: spinEmoji 4s linear infinite;
+    }
+    button {
+      background: linear-gradient(to right, #8e24aa, #ce93d8);
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      animation: bounceBtn 2s infinite;
+    }
+    button:hover {
+      background: #6a1b9a;
+      transform: scale(1.05);
+    }
 
+    @keyframes popUp {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes glowText {
+      0%, 100% { text-shadow: 0 0 8px #ba68c8; }
+      50% { text-shadow: 0 0 20px #8e24aa; }
+    }
+
+    @keyframes spinEmoji {
+      0% { transform: rotate(0); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes bounceBtn {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">🌈</div>
+    <h1>Hey there! I'm Niharika ✨</h1>
+    <p>Welcome to Task 7 of my Cognifyz Internship. This interactive page uses CSS animations to impress and engage you!</p>
+    <button onclick="alert('🎉 Thanks for checking out my animated page, Niharika here! 💜')">Click Me</button>
+  </div>
+</body>
+</html>
