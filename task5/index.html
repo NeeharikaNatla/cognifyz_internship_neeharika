@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 5 | Quote Generator - Niharika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      padding: 60px;
+      background: linear-gradient(135deg, #fbe9e7, #fff3e0);
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #8e24aa;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    #quote {
+      font-size: 22px;
+      padding: 25px;
+      margin: 20px auto;
+      width: 70%;
+      background: #ffffff;
+      border-left: 6px solid #8e24aa;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    #quote:hover {
+      transform: scale(1.03);
+    }
+
+    button {
+      background: linear-gradient(to right, #ab47bc, #8e24aa);
+      color: white;
+      padding: 14px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(142, 36, 170, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #6a1b9a;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌟 Quote of the Moment</h1>
+
+  <div id="quote">Click the button below to get inspired!</div>
+
+  <button onclick="getQuote()">💬 Get New Quote</button>
+
+  <footer>Created with 💜 by Niharika | Cognifyz Internship Task 5</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
 
